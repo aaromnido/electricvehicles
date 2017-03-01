@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1488363515,
-    'checksum' => '936d3c17a3469fb11214399c7c763974',
+    'timestamp' => 1488371543,
+    'checksum' => '97839488370928ca8998aa0394fbc604',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
@@ -38,6 +38,10 @@ return [
             'plugins/form' => [
                 'file' => 'user/plugins/form/blueprints.yaml',
                 'modified' => 1487333390
+            ],
+            'plugins/git-sync' => [
+                'file' => 'user/plugins/git-sync/blueprints.yaml',
+                'modified' => 1488371543
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/blueprints.yaml',
@@ -2405,6 +2409,177 @@ return [
                 'name' => 'plugins.form.recaptcha.secret_key',
                 'validation' => 'strict'
             ],
+            'plugins.git-sync' => [
+                'form' => [
+                    'validation' => 'strict'
+                ],
+                'type' => '_root',
+                'form_field' => false
+            ],
+            'plugins.git-sync.Settings' => [
+                'type' => 'section',
+                'underline' => true,
+                'name' => 'plugins.git-sync.Settings',
+                'validation' => 'strict'
+            ],
+            'plugins.git-sync.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.git-sync.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.git-sync.folders' => [
+                'type' => 'hidden',
+                'multiple' => true,
+                'size' => 'medium',
+                'label' => 'Sync Folders',
+                'classes' => 'fancy',
+                'default' => [
+                    0 => 'pages'
+                ],
+                'options' => [
+                    'pages' => 'Pages',
+                    'themes' => 'Themes'
+                ],
+                'validate' => [
+                    'type' => 'commalist'
+                ],
+                'name' => 'plugins.git-sync.folders',
+                'validation' => 'strict'
+            ],
+            'plugins.git-sync.repository' => [
+                'type' => 'text',
+                'label' => 'Git Repository',
+                'name' => 'plugins.git-sync.repository',
+                'validation' => 'strict'
+            ],
+            'plugins.git-sync.user' => [
+                'type' => 'text',
+                'label' => 'Git User',
+                'name' => 'plugins.git-sync.user',
+                'validation' => 'strict'
+            ],
+            'plugins.git-sync.password' => [
+                'type' => 'enc-password',
+                'label' => 'Git Password or Token',
+                'description' => 'Enter your password or token to encrypt and securely store it, then save the settings. It will not show up here for security reasons.',
+                'name' => 'plugins.git-sync.password',
+                'validation' => 'strict'
+            ],
+            'plugins.git-sync.webhook' => [
+                'type' => 'text',
+                'label' => 'Repository Web Hook',
+                'default' => '/_git-sync',
+                'name' => 'plugins.git-sync.webhook',
+                'validation' => 'strict'
+            ],
+            'plugins.git-sync.Advanced' => [
+                'type' => 'section',
+                'underline' => true,
+                'name' => 'plugins.git-sync.Advanced',
+                'validation' => 'strict'
+            ],
+            'plugins.git-sync.branch' => [
+                'type' => 'text',
+                'default' => 'master',
+                'label' => 'Local Branch',
+                'name' => 'plugins.git-sync.branch',
+                'validation' => 'strict'
+            ],
+            'plugins.git-sync.remote' => [
+                'type' => '_parent',
+                'name' => 'plugins.git-sync.remote',
+                'form_field' => false
+            ],
+            'plugins.git-sync.remote.name' => [
+                'type' => 'text',
+                'default' => 'origin',
+                'label' => 'Remote Name',
+                'name' => 'plugins.git-sync.remote.name',
+                'validation' => 'strict'
+            ],
+            'plugins.git-sync.remote.branch' => [
+                'type' => 'text',
+                'default' => 'master',
+                'label' => 'Remote Branch',
+                'name' => 'plugins.git-sync.remote.branch',
+                'validation' => 'strict'
+            ],
+            'plugins.git-sync.git' => [
+                'type' => '_parent',
+                'name' => 'plugins.git-sync.git',
+                'form_field' => false
+            ],
+            'plugins.git-sync.git.author' => [
+                'type' => 'select',
+                'default' => 'gituser',
+                'label' => 'Commits Author',
+                'options' => [
+                    'gituser' => 'Use Git User Name',
+                    'gitsync' => 'Use GitSync Committer Name',
+                    'gravuser' => 'Use Grav User Name',
+                    'gravfull' => 'Use Grav User Full Name'
+                ],
+                'name' => 'plugins.git-sync.git.author',
+                'validation' => 'strict'
+            ],
+            'plugins.git-sync.git.name' => [
+                'type' => 'text',
+                'default' => 'GitSync',
+                'label' => 'Commiter Name',
+                'name' => 'plugins.git-sync.git.name',
+                'validation' => 'strict'
+            ],
+            'plugins.git-sync.git.email' => [
+                'type' => 'text',
+                'default' => 'git-sync@trilby.media',
+                'label' => 'Committer Email',
+                'name' => 'plugins.git-sync.git.email',
+                'validation' => 'strict'
+            ],
+            'plugins.git-sync.git.bin' => [
+                'type' => 'text',
+                'default' => 'git',
+                'label' => 'Git Binary Path',
+                'name' => 'plugins.git-sync.git.bin',
+                'validation' => 'strict'
+            ],
+            'plugins.git-sync.logging' => [
+                'type' => 'toggle',
+                'default' => 0,
+                'label' => 'Log Git Commands',
+                'highlight' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.git-sync.logging',
+                'validation' => 'strict'
+            ],
+            'plugins.git-sync.Actions' => [
+                'type' => 'section',
+                'underline' => true,
+                'name' => 'plugins.git-sync.Actions',
+                'validation' => 'strict'
+            ],
+            'plugins.git-sync._wizard' => [
+                'type' => 'git-wizard',
+                'label' => 'Text Variable',
+                'name' => 'plugins.git-sync._wizard',
+                'validation' => 'strict'
+            ],
             'plugins.login' => [
                 'form' => [
                     'validation' => 'loose'
@@ -3083,6 +3258,30 @@ return [
                         'site_key' => 'plugins.form.recaptcha.site_key',
                         'secret_key' => 'plugins.form.recaptcha.secret_key'
                     ]
+                ],
+                'git-sync' => [
+                    'Settings' => 'plugins.git-sync.Settings',
+                    'enabled' => 'plugins.git-sync.enabled',
+                    'folders' => 'plugins.git-sync.folders',
+                    'repository' => 'plugins.git-sync.repository',
+                    'user' => 'plugins.git-sync.user',
+                    'password' => 'plugins.git-sync.password',
+                    'webhook' => 'plugins.git-sync.webhook',
+                    'Advanced' => 'plugins.git-sync.Advanced',
+                    'branch' => 'plugins.git-sync.branch',
+                    'remote' => [
+                        'name' => 'plugins.git-sync.remote.name',
+                        'branch' => 'plugins.git-sync.remote.branch'
+                    ],
+                    'git' => [
+                        'author' => 'plugins.git-sync.git.author',
+                        'name' => 'plugins.git-sync.git.name',
+                        'email' => 'plugins.git-sync.git.email',
+                        'bin' => 'plugins.git-sync.git.bin'
+                    ],
+                    'logging' => 'plugins.git-sync.logging',
+                    'Actions' => 'plugins.git-sync.Actions',
+                    '_wizard' => 'plugins.git-sync._wizard'
                 ],
                 'login' => [
                     'tabs' => 'plugins.login.tabs',
