@@ -73,3 +73,19 @@
         background: transparent;
         color: #00ABE3;
         border: 1px solid #00ABE3; }
+
+#footer,
+#footer .totop span {
+  background: #153143; }
+
+#footer {
+  background-image: url(../images/header-bg.svg);
+  background-position: bottom center;
+  background-repeat: no-repeat; }
+  #footer p {
+    color: #D0D6D9;
+    font-size: 12px; }
+  #footer img {
+    opacity: 0.8;
+    margin-right: 4rem;
+    vertical-align: middle; }

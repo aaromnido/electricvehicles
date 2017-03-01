@@ -8,8 +8,8 @@ $sky: #9FDFF4
 $sky-light: #C3EBF8
 $night: #153143
 $grey: #7A8A9F
-$hero-background-top: #445BA9
-$hero-background-bottom: #2DBBE9
+$silver: #D0D6D9
+
 //@mixin linear-gradient(-15deg, $hero-background-bottom 0%, $hero-background-top 80%)
 @mixin linear-gradient
     background: white
@@ -92,3 +92,23 @@ $hero-background-bottom: #2DBBE9
                 background: transparent
                 color: $blue
                 border: 1px solid $blue
+
+#footer,
+#footer .totop span
+    background: $night
+
+#footer
+    background-image: url(../images/header-bg.svg)
+    background-position: bottom center
+    background-repeat: no-repeat
+    background-size:contain
+    p
+        color: $silver
+        font-size: 12px
+
+    span
+
+    img
+        opacity: 0.8
+        margin-right: 4rem
+        vertical-align: middle
