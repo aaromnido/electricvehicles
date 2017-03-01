@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-electric-vehicles/user/plugins/admin/blueprints.yaml',
-    'modified' => 1487333390,
+    'modified' => 1488369886,
     'data' => [
         'name' => 'Admin Panel',
         'version' => '1.2.14',

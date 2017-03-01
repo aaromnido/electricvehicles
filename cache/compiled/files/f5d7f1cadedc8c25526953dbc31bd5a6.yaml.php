@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-electric-vehicles/user/plugins/admin/languages/br.yaml',
-    'modified' => 1487333390,
+    'modified' => 1488369886,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'Un ermaeziadenn beta an hini eo! Arverit en endro produadur gant evezh...',

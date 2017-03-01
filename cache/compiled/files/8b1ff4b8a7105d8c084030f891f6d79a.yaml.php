@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-electric-vehicles/user/plugins/backup-manager/languages/en.yaml',
-    'modified' => 1488374799,
+    'modified' => 1488369886,
     'data' => [
         'PLUGIN_BACKUP_MANAGER' => [
             'BACKUP_MANAGER' => 'Enhanced Backup for GRAV',

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-electric-vehicles/user/plugins/admin/languages/ru.yaml',
-    'modified' => 1487333390,
+    'modified' => 1488369886,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'Это бета-релиз! Вы используете это расширение на свой страх и риск...',

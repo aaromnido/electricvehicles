@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1488374799,
-    'checksum' => '2ebad4e738e462748be127808481ff29',
+    'timestamp' => 1488375055,
+    'checksum' => '7583c8a71dcdae3414704fce988924f7',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
@@ -25,35 +25,35 @@ return [
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/blueprints.yaml',
-                'modified' => 1487333390
+                'modified' => 1488369886
             ],
             'plugins/backup-manager' => [
                 'file' => 'user/plugins/backup-manager/blueprints.yaml',
-                'modified' => 1488374799
+                'modified' => 1488369886
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/blueprints.yaml',
-                'modified' => 1487333390
+                'modified' => 1488369886
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
-                'modified' => 1487333390
+                'modified' => 1488369886
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/blueprints.yaml',
-                'modified' => 1487333390
+                'modified' => 1488369886
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/blueprints.yaml',
-                'modified' => 1487333390
+                'modified' => 1488369886
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/blueprints.yaml',
-                'modified' => 1487333390
+                'modified' => 1488369886
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
-                'modified' => 1487333390
+                'modified' => 1488369886
             ]
         ]
     ],

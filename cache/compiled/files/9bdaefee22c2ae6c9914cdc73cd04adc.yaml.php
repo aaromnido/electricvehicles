@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/grav-electric-vehicles/user/plugins/markdown-notices/blueprints.yaml',
-    'modified' => 1487333390,
+    'modified' => 1488369886,
     'data' => [
         'name' => 'Markdown Notices',
         'version' => '1.0.0',
