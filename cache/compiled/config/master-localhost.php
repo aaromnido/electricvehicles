@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1488391441,
-    'checksum' => 'cd0c36b1db1ab0ee15da9b2c3b3cfa83',
+    'timestamp' => 1488393418,
+    'checksum' => '51e3461af9f7ffc8339ae402acc7568b',
     'files' => [
         'user/config' => [
             'media' => [
@@ -15,7 +15,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1488390697
+                'modified' => 1488393233
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -23,7 +23,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1488391441
+                'modified' => 1488393418
             ]
         ],
         'system/config' => [
@@ -499,11 +499,11 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'Grav',
-            'default_lang' => 'en',
+            'title' => 'Electric Vehicles',
+            'default_lang' => 'es',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@test.com'
+                'name' => 'Sergio García',
+                'email' => 'sergio@test.com'
             ],
             'taxonomies' => [
                 0 => 'category',
@@ -558,9 +558,9 @@ return [
             'custom_base_url' => '',
             'languages' => [
                 'supported' => [
-                    
+                    0 => 'es'
                 ],
-                'include_default_lang' => true,
+                'include_default_lang' => false,
                 'translations' => true,
                 'translations_fallback' => true,
                 'session_store_active' => false,
@@ -621,7 +621,7 @@ return [
                 'etag' => false,
                 'vary_accept_encoding' => false,
                 'redirect_default_route' => false,
-                'redirect_default_code' => 301,
+                'redirect_default_code' => '301',
                 'redirect_trailing_slash' => true,
                 'ignore_files' => [
                     0 => '.DS_Store'
@@ -681,7 +681,7 @@ return [
                 ]
             ],
             'errors' => [
-                'display' => true,
+                'display' => '1',
                 'log' => true
             ],
             'debugger' => [
