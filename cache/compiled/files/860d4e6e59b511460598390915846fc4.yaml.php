@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/electricvehicles/user/themes/antimatter/languages.yaml',
-    'modified' => 1488390697,
+    'modified' => 1488391401,
     'data' => [
         'en' => [
             'TRANSLATION_TEST' => 'Antimatter!',
