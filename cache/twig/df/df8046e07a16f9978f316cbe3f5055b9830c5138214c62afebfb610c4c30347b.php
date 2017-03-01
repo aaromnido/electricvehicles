@@ -81,6 +81,6 @@ class __TwigTemplate_d5cc87dbe452722155fd48d4334732c01095de8913955bcb4230a857e0a
         <a></a>
     </div>
 </form>
-", "partials/release-toggle.html.twig", "/Applications/MAMP/htdocs/grav-electric-vehicles/user/plugins/admin/themes/grav/templates/partials/release-toggle.html.twig");
+", "partials/release-toggle.html.twig", "/Applications/MAMP/htdocs/electricvehicles/user/plugins/admin/themes/grav/templates/partials/release-toggle.html.twig");
     }
 }

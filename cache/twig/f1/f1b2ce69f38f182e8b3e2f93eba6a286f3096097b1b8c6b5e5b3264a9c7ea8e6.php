@@ -30,7 +30,7 @@ class __TwigTemplate_5f8b548c5f83a5134d3d3500c05e24f691251132c77afad56e1d546ec5c
         // line 5
         if (($context["plugin_slug"] ?? null)) {
             // line 6
-            $context["installing"] = (is_string($__internal_e1bd576139acef69cf53a32c92345ea21f06525f6290a2b33c178287bfcb9122 = ($context["plugin_slug"] ?? null)) && is_string($__internal_ffd5bdc9919bb8b32dbd23548a6c2da86e2e063defffc97bbf3c3180f7d19d45 = "install") && ('' === $__internal_ffd5bdc9919bb8b32dbd23548a6c2da86e2e063defffc97bbf3c3180f7d19d45 || 0 === strpos($__internal_e1bd576139acef69cf53a32c92345ea21f06525f6290a2b33c178287bfcb9122, $__internal_ffd5bdc9919bb8b32dbd23548a6c2da86e2e063defffc97bbf3c3180f7d19d45)));
+            $context["installing"] = (is_string($__internal_cb5d1621cf5c6628500a199b17895d201ce7e9c5f12e5963738bf117355c5697 = ($context["plugin_slug"] ?? null)) && is_string($__internal_dd35a0f7e279572b6642a0129588d8bb377d91b94de5a21aa0e39dd67b4a20fd = "install") && ('' === $__internal_dd35a0f7e279572b6642a0129588d8bb377d91b94de5a21aa0e39dd67b4a20fd || 0 === strpos($__internal_cb5d1621cf5c6628500a199b17895d201ce7e9c5f12e5963738bf117355c5697, $__internal_dd35a0f7e279572b6642a0129588d8bb377d91b94de5a21aa0e39dd67b4a20fd)));
             // line 8
             if (($context["installing"] ?? null)) {
                 // line 9
@@ -351,6 +351,6 @@ class __TwigTemplate_5f8b548c5f83a5134d3d3500c05e24f691251132c77afad56e1d546ec5c
         {% endif %}
     </div>
 {% endblock %}
-", "plugins.html.twig", "/Applications/MAMP/htdocs/grav-electric-vehicles/user/plugins/admin/themes/grav/templates/plugins.html.twig");
+", "plugins.html.twig", "/Applications/MAMP/htdocs/electricvehicles/user/plugins/admin/themes/grav/templates/plugins.html.twig");
     }
 }
