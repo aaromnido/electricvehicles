@@ -37,6 +37,6 @@ class __TwigTemplate_0a79920d26e8e437ddfc9b566358c86795b25a6adbb319ed1e99ae7f230
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "empty.html.twig", "/Applications/MAMP/htdocs/grav-electric-vehicles/user/plugins/admin/themes/grav/templates/empty.html.twig");
+        return new Twig_Source("", "empty.html.twig", "/Applications/MAMP/htdocs/electricvehicles/user/plugins/admin/themes/grav/templates/empty.html.twig");
     }
 }

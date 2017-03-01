@@ -1253,6 +1253,6 @@ $context["p"], "published", array())) ? (($this->env->getExtension('Grav\Plugin\
     {% include 'partials/admin-pro-pages-addons.html.twig' ignore missing %}
 
 {% endblock %}
-", "pages.html.twig", "/Applications/MAMP/htdocs/grav-electric-vehicles/user/plugins/admin/themes/grav/templates/pages.html.twig");
+", "pages.html.twig", "/Applications/MAMP/htdocs/electricvehicles/user/plugins/admin/themes/grav/templates/pages.html.twig");
     }
 }

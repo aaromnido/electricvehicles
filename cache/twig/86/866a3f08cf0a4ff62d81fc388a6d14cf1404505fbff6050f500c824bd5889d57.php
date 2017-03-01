@@ -211,6 +211,6 @@ class __TwigTemplate_4a5ac056b60b2a608ed5581a12191d27f075e7f8874cd1ea385ff144b25
         </div>
     </div>
 {% endblock %}
-", "forms/fields/editor/editor.html.twig", "/Applications/MAMP/htdocs/grav-electric-vehicles/user/plugins/admin/themes/grav/templates/forms/fields/editor/editor.html.twig");
+", "forms/fields/editor/editor.html.twig", "/Applications/MAMP/htdocs/electricvehicles/user/plugins/admin/themes/grav/templates/forms/fields/editor/editor.html.twig");
     }
 }

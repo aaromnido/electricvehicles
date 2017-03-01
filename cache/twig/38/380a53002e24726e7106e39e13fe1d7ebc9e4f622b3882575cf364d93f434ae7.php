@@ -141,6 +141,6 @@ class __TwigTemplate_18bb7876619ce73a560fdc2cc2b2ffdb1aa253dbabb7360b3ba1dfcd17f
     {{ nonce_field('admin-form', 'admin-nonce')|raw }}
 
 </form>
-", "partials/blueprints-new.html.twig", "/Applications/MAMP/htdocs/grav-electric-vehicles/user/plugins/admin/themes/grav/templates/partials/blueprints-new.html.twig");
+", "partials/blueprints-new.html.twig", "/Applications/MAMP/htdocs/electricvehicles/user/plugins/admin/themes/grav/templates/partials/blueprints-new.html.twig");
     }
 }

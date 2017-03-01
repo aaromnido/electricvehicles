@@ -2,21 +2,18 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/electricvehicles/user/config/system.yaml',
-    'modified' => 1488391441,
+    'modified' => 1488394582,
     'data' => [
         'absolute_urls' => false,
-        'timezone' => '',
-        'default_locale' => NULL,
         'param_sep' => ':',
         'wrapped_site' => false,
         'reverse_proxy_setup' => false,
         'force_ssl' => false,
-        'custom_base_url' => '',
         'languages' => [
             'supported' => [
-                
+                0 => 'es'
             ],
-            'include_default_lang' => true,
+            'include_default_lang' => false,
             'translations' => true,
             'translations_fallback' => true,
             'session_store_active' => false,
@@ -37,7 +34,6 @@ return [
                 'count' => 20
             ],
             'dateformat' => [
-                'default' => NULL,
                 'short' => 'jS M Y',
                 'long' => 'F jS \\a\\t g:ia'
             ],
@@ -71,13 +67,12 @@ return [
                 5 => 'rss',
                 6 => 'atom'
             ],
-            'append_url_extension' => '',
             'expires' => 604800,
             'last_modified' => false,
             'etag' => false,
             'vary_accept_encoding' => false,
             'redirect_default_route' => false,
-            'redirect_default_code' => 301,
+            'redirect_default_code' => '301',
             'redirect_trailing_slash' => true,
             'ignore_files' => [
                 0 => '.DS_Store'
@@ -106,10 +101,7 @@ return [
             'cli_compatibility' => false,
             'lifetime' => 604800,
             'gzip' => false,
-            'allow_webserver_gzip' => false,
-            'redis' => [
-                'socket' => false
-            ]
+            'allow_webserver_gzip' => false
         ],
         'twig' => [
             'cache' => true,
@@ -137,7 +129,7 @@ return [
             ]
         ],
         'errors' => [
-            'display' => true,
+            'display' => '1',
             'log' => true
         ],
         'debugger' => [
@@ -156,13 +148,7 @@ return [
         ],
         'media' => [
             'enable_media_timestamp' => false,
-            'upload_limit' => 0,
-            'unsupported_inline_types' => [
-                
-            ],
-            'allowed_fallback_types' => [
-                
-            ]
+            'upload_limit' => 0
         ],
         'session' => [
             'enabled' => true,
@@ -170,12 +156,10 @@ return [
             'name' => 'grav-site',
             'secure' => false,
             'httponly' => true,
-            'split' => true,
-            'path' => NULL
+            'split' => true
         ],
         'gpm' => [
             'releases' => 'stable',
-            'proxy_url' => NULL,
             'method' => 'auto',
             'verify_peer' => true
         ]
