@@ -74,6 +74,12 @@
         color: #00ABE3;
         border: 1px solid #00ABE3; }
 
+#content {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding-left: 6.5rem;
+  padding-right: 6.5rem; }
+
 #footer,
 #footer .totop span {
   background: #153143; }
