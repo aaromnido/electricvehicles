@@ -8,9 +8,16 @@ $sky: #9FDFF4
 $sky-light: #C3EBF8
 $night: #153143
 $grey: #7A8A9F
+$hero-background-top: #445BA9
+$hero-background-bottom: #2DBBE9
+//@mixin linear-gradient(-15deg, $hero-background-bottom 0%, $hero-background-top 80%)
+@mixin linear-gradient
+    background: white
+    background-image: linear-gradient(to right,transparentize($green, 0.2), transparentize($blue, 0.2))
 
-body
-
+#body
+    padding-left: 0
+    padding-right: 0
 
 #logo a
     display: inline-block
@@ -37,3 +44,51 @@ body
         li.active
             a
                 opacity: 0.5
+
+.section-hero
+    padding-left: 6rem
+    padding-right: 6rem
+    background: url(../images/hero-bg.png)
+    background-size: cover
+    margin-top: -4rem
+    width: 100%
+    min-height: 560px
+    display: flex
+    align-items: center
+    align-content: center
+
+    .content
+        max-width: 40%
+        padding: 0
+        >*
+            text-align: left
+            padding: 0
+            margin: 0 0 1rem
+            color: $night
+
+        h1
+            font-size: 46px
+
+        h2
+            margin-top: -1.5rem
+            font-size: 32px
+
+        p
+            font-size: 14px
+
+        a
+            margin-top: 1rem
+            display: inline-block !important
+            //background: $green-blue
+            @include linear-gradient
+            padding: 0.6rem 1.6rem
+            border-radius: 100px
+            color: white
+            text-transform: uppercase
+            font-weight: 600
+            border: 1px solid transparent
+            transition: all 0.4s ease-in
+            &:hover
+                background: transparent
+                color: $blue
+                border: 1px solid $blue
