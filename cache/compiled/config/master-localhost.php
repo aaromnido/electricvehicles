@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1488372930,
-    'checksum' => '200db14a1c146e4b6a3bbf3ccce45f7a',
+    'timestamp' => 1488373044,
+    'checksum' => '4fa3f22e52020586ca6c82db5ff64dde',
     'files' => [
         'user/config' => [
             'media' => [
@@ -48,6 +48,10 @@ return [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
                 'modified' => 1487333390
+            ],
+            'plugins/backup-manager' => [
+                'file' => 'user/plugins/backup-manager/backup-manager.yaml',
+                'modified' => 1488373044
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
@@ -127,6 +131,9 @@ return [
                         'visitors' => 20
                     ]
                 ]
+            ],
+            'backup-manager' => [
+                'enabled' => true
             ],
             'email' => [
                 'enabled' => true,

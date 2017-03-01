@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1488372930,
-    'checksum' => '936d3c17a3469fb11214399c7c763974',
+    'timestamp' => 1488373044,
+    'checksum' => 'a4f7106c2e259a32d729ac414a58706f',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
@@ -26,6 +26,10 @@ return [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/blueprints.yaml',
                 'modified' => 1487333390
+            ],
+            'plugins/backup-manager' => [
+                'file' => 'user/plugins/backup-manager/blueprints.yaml',
+                'modified' => 1488373044
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/blueprints.yaml',
@@ -2102,6 +2106,260 @@ return [
                 'name' => 'plugins.admin.popularity.history.visitors',
                 'validation' => 'loose'
             ],
+            'plugins.backup-manager' => [
+                'form' => [
+                    'validation' => 'strict'
+                ],
+                'type' => '_root',
+                'form_field' => false
+            ],
+            'plugins.backup-manager.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.backup-manager.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.backup-manager.backup' => [
+                'type' => '_parent',
+                'name' => 'plugins.backup-manager.backup',
+                'form_field' => false
+            ],
+            'plugins.backup-manager.backup.testmode' => [
+                'type' => '_parent',
+                'name' => 'plugins.backup-manager.backup.testmode',
+                'form_field' => false
+            ],
+            'plugins.backup-manager.backup.testmode.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Test configuration',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.backup-manager.backup.testmode.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.backup-manager.backup.testmode.compressionratio' => [
+                'type' => 'text',
+                'size' => 'small',
+                'label' => 'Assumed Compression Rate for tests',
+                'default' => 1.1999999999999999555910790149937383830547332763671875,
+                'validate' => [
+                    'type' => 'float',
+                    'min' => 1,
+                    'max' => 5
+                ],
+                'name' => 'plugins.backup-manager.backup.testmode.compressionratio',
+                'validation' => 'strict'
+            ],
+            'plugins.backup-manager.backup.phptimeout' => [
+                'type' => 'text',
+                'size' => 'small',
+                'append' => 'sec',
+                'label' => 'Backup Timeout',
+                'default' => 600,
+                'validate' => [
+                    'type' => 'int',
+                    'min' => 60,
+                    'max' => 1800
+                ],
+                'name' => 'plugins.backup-manager.backup.phptimeout',
+                'validation' => 'strict'
+            ],
+            'plugins.backup-manager.backup.storage' => [
+                'type' => '_parent',
+                'name' => 'plugins.backup-manager.backup.storage',
+                'form_field' => false
+            ],
+            'plugins.backup-manager.backup.storage.maxspace' => [
+                'type' => 'text',
+                'size' => 'small',
+                'append' => 'GB',
+                'label' => 'Maximum space allowed for backups',
+                'default' => 10,
+                'validate' => [
+                    'type' => 'int',
+                    'min' => 0,
+                    'max' => 2048,
+                    'step' => 1
+                ],
+                'name' => 'plugins.backup-manager.backup.storage.maxspace',
+                'validation' => 'strict'
+            ],
+            'plugins.backup-manager.backup.storage.keepdays' => [
+                'type' => 'text',
+                'size' => 'small',
+                'append' => 'days',
+                'label' => 'Keep backups x days',
+                'default' => 10,
+                'validate' => [
+                    'type' => 'int',
+                    'min' => 0,
+                    'max' => 365,
+                    'step' => 1
+                ],
+                'name' => 'plugins.backup-manager.backup.storage.keepdays',
+                'validation' => 'strict'
+            ],
+            'plugins.backup-manager.backup.storage.showbackups' => [
+                'type' => 'text',
+                'size' => 'small',
+                'append' => 'days',
+                'label' => 'Backups to show',
+                'default' => 50,
+                'validate' => [
+                    'type' => 'int',
+                    'min' => 1,
+                    'max' => 300,
+                    'step' => 1
+                ],
+                'name' => 'plugins.backup-manager.backup.storage.showbackups',
+                'validation' => 'strict'
+            ],
+            'plugins.backup-manager.backup.log' => [
+                'type' => 'toggle',
+                'label' => 'Include log',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.backup-manager.backup.log',
+                'validation' => 'strict'
+            ],
+            'plugins.backup-manager.backup.ignore' => [
+                'type' => '_parent',
+                'name' => 'plugins.backup-manager.backup.ignore',
+                'form_field' => false
+            ],
+            'plugins.backup-manager.backup.ignore.foldercase' => [
+                'type' => 'toggle',
+                'label' => 'Case insensitive',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.backup-manager.backup.ignore.foldercase',
+                'validation' => 'strict'
+            ],
+            'plugins.backup-manager.backup.ignore.toplevelfolders' => [
+                'type' => 'array',
+                'label' => 'Ignore top level folders',
+                'size' => 'large',
+                'default' => [
+                    
+                ],
+                'value_only' => true,
+                'name' => 'plugins.backup-manager.backup.ignore.toplevelfolders',
+                'validation' => 'strict'
+            ],
+            'plugins.backup-manager.backup.ignore.toplevelintersect' => [
+                'type' => 'toggle',
+                'label' => 'Intersect top level folders',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.backup-manager.backup.ignore.toplevelintersect',
+                'validation' => 'strict'
+            ],
+            'plugins.backup-manager.backup.ignore.folders' => [
+                'type' => 'array',
+                'label' => 'Ignore folder name',
+                'size' => 'large',
+                'default' => [
+                    
+                ],
+                'value_only' => true,
+                'name' => 'plugins.backup-manager.backup.ignore.folders',
+                'validation' => 'strict'
+            ],
+            'plugins.backup-manager.backup.ignore.foldersintersect' => [
+                'type' => 'toggle',
+                'label' => 'Intersect ignored folders',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.backup-manager.backup.ignore.foldersintersect',
+                'validation' => 'strict'
+            ],
+            'plugins.backup-manager.backup.ignore.addasemptyfolder' => [
+                'type' => 'array',
+                'label' => 'Add as empty folder',
+                'size' => 'large',
+                'default' => [
+                    
+                ],
+                'value_only' => true,
+                'name' => 'plugins.backup-manager.backup.ignore.addasemptyfolder',
+                'validation' => 'strict'
+            ],
+            'plugins.backup-manager.backup.ignore.forceaddasempty' => [
+                'type' => 'toggle',
+                'label' => 'Force add as empty folder',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.backup-manager.backup.ignore.forceaddasempty',
+                'validation' => 'strict'
+            ],
+            'plugins.backup-manager.backup.ignore.filetypes' => [
+                'type' => 'array',
+                'label' => 'Ignore file types',
+                'size' => 'large',
+                'default' => [
+                    
+                ],
+                'value_only' => true,
+                'name' => 'plugins.backup-manager.backup.ignore.filetypes',
+                'validation' => 'strict'
+            ],
+            'plugins.backup-manager.Backup' => [
+                'type' => 'section',
+                'underline' => true,
+                'name' => 'plugins.backup-manager.Backup',
+                'validation' => 'strict'
+            ],
             'plugins.email' => [
                 'form' => [
                     'validation' => 'loose'
@@ -3040,6 +3298,33 @@ return [
                     ],
                     'dashboard' => [
                         'days_of_stats' => 'plugins.admin.dashboard.days_of_stats'
+                    ]
+                ],
+                'backup-manager' => [
+                    'enabled' => 'plugins.backup-manager.enabled',
+                    'Backup' => 'plugins.backup-manager.Backup',
+                    'backup' => [
+                        'testmode' => [
+                            'enabled' => 'plugins.backup-manager.backup.testmode.enabled',
+                            'compressionratio' => 'plugins.backup-manager.backup.testmode.compressionratio'
+                        ],
+                        'phptimeout' => 'plugins.backup-manager.backup.phptimeout',
+                        'storage' => [
+                            'maxspace' => 'plugins.backup-manager.backup.storage.maxspace',
+                            'keepdays' => 'plugins.backup-manager.backup.storage.keepdays',
+                            'showbackups' => 'plugins.backup-manager.backup.storage.showbackups'
+                        ],
+                        'log' => 'plugins.backup-manager.backup.log',
+                        'ignore' => [
+                            'foldercase' => 'plugins.backup-manager.backup.ignore.foldercase',
+                            'toplevelfolders' => 'plugins.backup-manager.backup.ignore.toplevelfolders',
+                            'toplevelintersect' => 'plugins.backup-manager.backup.ignore.toplevelintersect',
+                            'folders' => 'plugins.backup-manager.backup.ignore.folders',
+                            'foldersintersect' => 'plugins.backup-manager.backup.ignore.foldersintersect',
+                            'addasemptyfolder' => 'plugins.backup-manager.backup.ignore.addasemptyfolder',
+                            'forceaddasempty' => 'plugins.backup-manager.backup.ignore.forceaddasempty',
+                            'filetypes' => 'plugins.backup-manager.backup.ignore.filetypes'
+                        ]
                     ]
                 ],
                 'email' => [
