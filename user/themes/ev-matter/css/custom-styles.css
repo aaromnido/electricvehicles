@@ -1,16 +1,22 @@
 /* Vars */
 /* Colors */
-#logo {
+#logo a {
+  display: inline-block;
   background: url(../images/logo-ev.svg) center no-repeat;
   width: 284px;
   height: 25px;
   text-indent: -9999px;
   cursor: pointer;
   transition: all 0.4s ease-in; }
-  #logo:hover {
+  #logo a:hover {
     opacity: 0.8; }
 
 #header {
   background-image: url(../images/header-bg.svg);
   background-position: bottom center;
   background-repeat: no-repeat; }
+  #header #navbar a {
+    color: #7A8A9F;
+    text-transform: uppercase; }
+  #header #navbar li.active a {
+    opacity: 0.5; }

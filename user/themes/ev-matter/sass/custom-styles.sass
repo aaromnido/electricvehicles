@@ -12,7 +12,8 @@ $grey: #7A8A9F
 body
 
 
-#logo
+#logo a
+    display: inline-block
     background: url(../images/logo-ev.svg) center no-repeat
     width: 284px
     height: 25px
@@ -27,3 +28,12 @@ body
     background-position: bottom center
     background-repeat: no-repeat
     background-size:contain
+
+    #navbar
+        a
+            color: $grey
+            text-transform: uppercase
+
+        li.active
+            a
+                opacity: 0.5
