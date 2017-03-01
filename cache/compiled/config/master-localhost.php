@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1488371544,
-    'checksum' => '8c3e5df8f1b8994c494286f7fd58f565',
+    'timestamp' => 1488372930,
+    'checksum' => '200db14a1c146e4b6a3bbf3ccce45f7a',
     'files' => [
         'user/config' => [
             'media' => [
@@ -60,10 +60,6 @@ return [
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
                 'modified' => 1487333390
-            ],
-            'plugins/git-sync' => [
-                'file' => 'user/plugins/git-sync/git-sync.yaml',
-                'modified' => 1488371543
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
@@ -174,10 +170,6 @@ return [
                         0 => 'image/*'
                     ]
                 ]
-            ],
-            'git-sync' => [
-                'enabled' => true,
-                'text_var' => 'Custom Text added by the **Git Sync** plugin (disable plugin to remove)'
             ],
             'login' => [
                 'enabled' => true,
