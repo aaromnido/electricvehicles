@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1488491281,
-    'checksum' => '7e9945a75dce55909aecb72779a2625b',
+    'timestamp' => 1488494415,
+    'checksum' => 'dd7ff613853ab3003a87b4b4093cd467',
     'files' => [
         'user/config' => [
             'media' => [
@@ -11,7 +11,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1488491281
+                'modified' => 1488494415
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -148,18 +148,18 @@ return [
             ],
             'email' => [
                 'enabled' => true,
-                'from' => 'info@electricvehicles.es',
+                'from' => 'sergio@electricvehicles.es',
                 'from_name' => 'Electric Vehicles Contact Form',
-                'to' => 'info@electricvehicles.es',
+                'to' => 'sergio@electricvehicles.es',
                 'to_name' => 'Sergio García',
                 'mailer' => [
                     'engine' => 'smtp',
                     'smtp' => [
-                        'server' => 'smtp.mailtrap.io',
+                        'server' => 'smtp.electricvehicles.es',
                         'port' => 25,
                         'encryption' => 'none',
-                        'user' => '180715050e8d95',
-                        'password' => '2e6713c23d02f5'
+                        'user' => 'sergio@electricvehicles.es',
+                        'password' => 's0250201039A'
                     ],
                     'sendmail' => [
                         'bin' => '/usr/sbin/sendmail'
