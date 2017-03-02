@@ -5,52 +5,58 @@
       </head>
       <body>
         <hr>
-<p>title: Contacto</p>
-<p>form:
-    name: contacto</p>
-<pre><code>fields:
-    - name: name
-      label: Nombre
-      placeholder: Introduce tu nombre completo...
-      autofocus: on
-      autocomplete: on
-      type: text
-      validate:
-        required: true
-
-    - name: email
-      label: Email
-      placeholder: Introduce tu email...
-      type: email
-      validate:
-        required: true
-
-    - name: message
-      label: Mensaje
-      placeholder: Introduce tu consulta para que podamos ayudarte..
-      type: textarea
-      validate:
-        required: true
-
-buttons:
-    - type: submit
-      value: Envíar
-    - type: reset
-      value: Limpiar
-
-process:
-    - email:
-        subject: &quot;[Site Contact Form] {{ form.value.name|e }}&quot;
-        body: &quot;{% include &#39;forms/data.html.twig&#39; %}&quot;
-    - save:
-        fileprefix: contact-
-        dateformat: Ymd-His-u
-        extension: txt
-        body: &quot;{% include &#39;forms/data.txt.twig&#39; %}&quot;
-    - message: Gracias, en breves nos pondremos en contacto contigo. :)
-    - display: thankyou
+<p>title: Contacto
+form:
+    name: contacto
+    fields:
+        -
+            name: name
+            label: Nombre
+            placeholder: &#39;Introduce tu nombre completo...&#39;
+            autofocus: &#39;on&#39;
+            autocomplete: &#39;on&#39;
+            type: text
+            validate:
+                required: true
+        -
+            name: email
+            label: Email
+            placeholder: &#39;Introduce tu email...&#39;
+            type: email
+            validate:
+                required: true
+        -
+            name: message
+            label: Mensaje
+            placeholder: &#39;Introduce tu consulta para que podamos ayudarte..&#39;
+            type: textarea
+            validate:
+                required: true
+    buttons:
+        -
+            type: submit
+            value: Envíar
+        -
+            type: reset
+            value: Limpiar
+    process:
+        -
+            email:
+                subject: &#39;[Site Contact Form] {{ form.value.name|e }}&#39;
+                body: &#39;{% include &#39;&#39;forms/data.html.twig&#39;&#39; %}&#39;
+        -
+            save:
+                fileprefix: contact-
+                dateformat: Ymd-His-u
+                extension: txt
+                body: &#39;{% include &#39;&#39;forms/data.txt.twig&#39;&#39; %}&#39;
+        -
+            message: &#39;Gracias, en breves nos pondremos en contacto contigo. :)&#39;
+        -</p>
+<pre><code>        display: thankyou
 </code></pre><hr>
 <h2 id="formulario-de-contacto">Formulario de contacto</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum blandit sagittis. Vestibulum hendrerit sed sem ac tempor. Morbi eget ex augue. Sed quam mi, viverra quis erat non, hendrerit luctus sapien. Donec magna urna, vestibulum pharetra porta eget, vestibulum ut libero. </p>
 
       </body>
     </html>
