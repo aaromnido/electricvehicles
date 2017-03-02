@@ -39,7 +39,7 @@
 
 {% endblock head %}
 </head>
-<body id="top" class="{{ page.header.body_classes }}">
+<body id="top" class="{{ page.header.body_classes }} body {{ page.title|hyphenize}}">
     <div id="sb-site">
         {% block header %}
         <header id="header">
