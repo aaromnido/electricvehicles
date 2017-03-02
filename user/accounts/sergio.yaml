@@ -1,0 +1,12 @@
+email: sergio@electricvehicles.es
+access:
+  admin:
+    super: 'true'
+    login: 'true'
+  site:
+    login: 'true'
+fullname: 'Sergio García'
+title: Administrator
+state: enabled
+hashed_password: $2y$10$l.QrWruD5KhayZQcJ9lAAuVtb8D0frD.yWWDDDaH2kvpHDuCvpsCW
+language: en

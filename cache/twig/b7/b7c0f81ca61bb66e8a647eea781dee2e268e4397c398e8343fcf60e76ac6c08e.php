@@ -102,6 +102,10 @@ class __TwigTemplate_fcdfe925fd166c548bdded773e0f8411c42fcba178ed58b8ff93e52ce40
 \t\t\t</a><!-- box -->
 \t\t</div>
 \t</section>
+
+\t<div class=\"modalbox modalbox-map\">
+\t\t<iframe width=\"100%\" height=\"500\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"https://www.electromaps.com/widget?key=58b8a420815d66.56100210\"></iframe>
+\t</div>
 ";
     }
 
@@ -177,6 +181,10 @@ class __TwigTemplate_fcdfe925fd166c548bdded773e0f8411c42fcba178ed58b8ff93e52ce40
 \t\t\t</a><!-- box -->
 \t\t</div>
 \t</section>
+
+\t<div class=\"modalbox modalbox-map\">
+\t\t<iframe width=\"100%\" height=\"500\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"https://www.electromaps.com/widget?key=58b8a420815d66.56100210\"></iframe>
+\t</div>
 {% endblock %}
 ", "home.html.twig", "/Applications/MAMP/htdocs/electricvehicles/user/themes/ev-matter/templates/home.html.twig");
     }
