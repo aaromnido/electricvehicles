@@ -36,6 +36,48 @@ class __TwigTemplate_fcdfe925fd166c548bdded773e0f8411c42fcba178ed58b8ff93e52ce40
         echo "
 \t\t</div>
 \t</header>
+
+\t<section class=\"boxes\" id=\"featured\">
+
+\t\t<div class=\"row\">
+\t\t\t<a href=\"";
+        // line 13
+        echo ($context["base_url"] ?? null);
+        echo "/servicios\" class=\"box single-box box-services\">
+\t\t\t\t<img src=\"";
+        // line 14
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://");
+        echo "/images/icon-box-help.svg\" alt=\"Servicios\" />
+\t\t\t\t<h3>Services</h3>
+\t\t\t\t<p>Te ofrecemos vehículos eléctricos nuevos y de ocasión. Si estás interesado en algún modelo en particular lo traemos desde cualquier parte del mundo para ti.</p>
+\t\t\t</a><!-- box -->
+
+\t\t\t<a href=\"";
+        // line 19
+        echo ($context["base_url"] ?? null);
+        echo "/vehículos\" class=\"box single-box box-vehicles\">
+\t\t\t\t<img src=\"";
+        // line 20
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://");
+        echo "/images/icon-box-car.svg\" alt=\"Vehicles\" />
+\t\t\t\t<h3>Vehículos</h3>
+\t\t\t\t<p>En estos momentos disponemos de una serie de vehículos en stock.<br>Entra y descúbrelos.</p>
+\t\t\t</a><!-- box -->
+
+\t\t\t<a href=\"";
+        // line 25
+        echo ($context["base_url"] ?? null);
+        echo "/vblog\" class=\"box single-box box-vblog\">
+\t\t\t\t<img src=\"";
+        // line 26
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://");
+        echo "/images/icon-box-video.svg\" alt=\"VBlog Zero Emisiones\" />
+\t\t\t\t<h3>Canal Zero Emisiones</h3>
+\t\t\t\t<p>En nuestro canal Zero Emisiones podrás disfrutar de multitud de consejos, análisis y temas interesantes relacionados con la movilidad eléctrica.</p>
+\t\t\t</a><!-- box -->
+\t\t</div>
+
+\t</section>
 ";
     }
 
@@ -51,7 +93,7 @@ class __TwigTemplate_fcdfe925fd166c548bdded773e0f8411c42fcba178ed58b8ff93e52ce40
 
     public function getDebugInfo()
     {
-        return array (  35 => 6,  31 => 4,  28 => 3,  11 => 1,);
+        return array (  73 => 26,  69 => 25,  61 => 20,  57 => 19,  49 => 14,  45 => 13,  35 => 6,  31 => 4,  28 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -72,6 +114,30 @@ class __TwigTemplate_fcdfe925fd166c548bdded773e0f8411c42fcba178ed58b8ff93e52ce40
 \t\t\t{{ page.content }}
 \t\t</div>
 \t</header>
+
+\t<section class=\"boxes\" id=\"featured\">
+
+\t\t<div class=\"row\">
+\t\t\t<a href=\"{{ base_url }}/servicios\" class=\"box single-box box-services\">
+\t\t\t\t<img src=\"{{ url(\"theme://\") }}/images/icon-box-help.svg\" alt=\"Servicios\" />
+\t\t\t\t<h3>Services</h3>
+\t\t\t\t<p>Te ofrecemos vehículos eléctricos nuevos y de ocasión. Si estás interesado en algún modelo en particular lo traemos desde cualquier parte del mundo para ti.</p>
+\t\t\t</a><!-- box -->
+
+\t\t\t<a href=\"{{ base_url }}/vehículos\" class=\"box single-box box-vehicles\">
+\t\t\t\t<img src=\"{{ url(\"theme://\") }}/images/icon-box-car.svg\" alt=\"Vehicles\" />
+\t\t\t\t<h3>Vehículos</h3>
+\t\t\t\t<p>En estos momentos disponemos de una serie de vehículos en stock.<br>Entra y descúbrelos.</p>
+\t\t\t</a><!-- box -->
+
+\t\t\t<a href=\"{{ base_url }}/vblog\" class=\"box single-box box-vblog\">
+\t\t\t\t<img src=\"{{ url(\"theme://\") }}/images/icon-box-video.svg\" alt=\"VBlog Zero Emisiones\" />
+\t\t\t\t<h3>Canal Zero Emisiones</h3>
+\t\t\t\t<p>En nuestro canal Zero Emisiones podrás disfrutar de multitud de consejos, análisis y temas interesantes relacionados con la movilidad eléctrica.</p>
+\t\t\t</a><!-- box -->
+\t\t</div>
+
+\t</section>
 {% endblock %}
 ", "home.html.twig", "/Applications/MAMP/htdocs/electricvehicles/user/themes/ev-matter/templates/home.html.twig");
     }

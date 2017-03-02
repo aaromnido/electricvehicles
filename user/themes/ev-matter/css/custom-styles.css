@@ -70,7 +70,7 @@
       text-transform: uppercase;
       font-weight: 600;
       border: 1px solid transparent;
-      transition: all 0.4s ease-in; }
+      transition: all 2.4s ease-out; }
       .section-hero .content a:hover {
         background: transparent;
         color: #00ABE3;
@@ -123,3 +123,36 @@
 
 .button {
   border-radius: 100px; }
+
+#featured {
+  margin-top: 40px; }
+  #featured .row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 6rem;
+    padding-right: 6rem; }
+  #featured .box {
+    background: #65AF00;
+    text-align: center;
+    margin: 1px;
+    width: 33%;
+    padding: 30px;
+    transition: all 0.4s ease-in;
+    opacity: 1; }
+    #featured .box.box-vehicles {
+      background-color: #153143;
+      background-image: url(../images/box-gradient.png), url(../images/opel-ampera-blanco.jpg);
+      background-size: cover;
+      background-position: center; }
+    #featured .box.box-vblog {
+      background: #00ABE3; }
+    #featured .box:hover {
+      box-shadow: 0 10px 15px #D0D6D9;
+      width: 40%;
+      opacity: 0.85; }
+    #featured .box > * {
+      color: white;
+      margin: 0; }
+    #featured .box h3 {
+      font-size: 24px; }

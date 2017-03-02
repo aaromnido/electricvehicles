@@ -6,4 +6,28 @@
 			{{ page.content }}
 		</div>
 	</header>
+
+	<section class="boxes" id="featured">
+
+		<div class="row">
+			<a href="{{ base_url }}/servicios" class="box single-box box-services">
+				<img src="{{ url("theme://") }}/images/icon-box-help.svg" alt="Servicios" />
+				<h3>Services</h3>
+				<p>Te ofrecemos vehículos eléctricos nuevos y de ocasión. Si estás interesado en algún modelo en particular lo traemos desde cualquier parte del mundo para ti.</p>
+			</a><!-- box -->
+
+			<a href="{{ base_url }}/vehículos" class="box single-box box-vehicles">
+				<img src="{{ url("theme://") }}/images/icon-box-car.svg" alt="Vehicles" />
+				<h3>Vehículos</h3>
+				<p>En estos momentos disponemos de una serie de vehículos en stock.<br>Entra y descúbrelos.</p>
+			</a><!-- box -->
+
+			<a href="{{ base_url }}/vblog" class="box single-box box-vblog">
+				<img src="{{ url("theme://") }}/images/icon-box-video.svg" alt="VBlog Zero Emisiones" />
+				<h3>Canal Zero Emisiones</h3>
+				<p>En nuestro canal Zero Emisiones podrás disfrutar de multitud de consejos, análisis y temas interesantes relacionados con la movilidad eléctrica.</p>
+			</a><!-- box -->
+		</div>
+
+	</section>
 {% endblock %}

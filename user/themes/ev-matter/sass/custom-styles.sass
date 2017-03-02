@@ -57,6 +57,7 @@ $silver: #D0D6D9
     display: flex
     align-items: center
     align-content: center
+    //background: transparentize($grey, 0.8)
 
     .content
         max-width: 40%
@@ -88,7 +89,7 @@ $silver: #D0D6D9
             text-transform: uppercase
             font-weight: 600
             border: 1px solid transparent
-            transition: all 0.4s ease-in
+            transition: all 2.4s ease-out
             &:hover
                 background: transparent
                 color: $blue
@@ -144,3 +145,39 @@ $silver: #D0D6D9
                 border: 1px solid $blue
 .button
     border-radius: 100px
+
+
+#featured
+    margin-top: 40px
+
+    .row
+        display: flex
+        padding-left: 6rem
+        padding-right: 6rem
+
+    .box
+        background: $green
+        text-align: center
+        margin: 1px
+        width: 33%
+        padding: 30px
+        transition: all 0.4s ease-in
+        opacity: 1
+        &.box-vehicles
+            background-color: $night
+            background-image: url(../images/box-gradient.png), url(../images/opel-ampera-blanco.jpg)
+            background-size: cover
+            background-position: center
+        &.box-vblog
+            background: $blue
+        &:hover
+            box-shadow: 0 10px  15px $silver
+            width: 40%
+            opacity: 0.85
+
+        >*
+            color: white
+            margin: 0
+
+        h3
+            font-size: 24px
