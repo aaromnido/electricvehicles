@@ -19,10 +19,12 @@
   background-image: url(../images/header-bg.svg);
   background-position: bottom center;
   background-repeat: no-repeat; }
-  #header #navbar a {
-    color: #7A8A9F;
+  #header #navbar a,
+  #header.scrolled #navbar a {
+    color: #7A8A9F !important;
     text-transform: uppercase; }
-  #header #navbar li.active a {
+  #header #navbar li.active a,
+  #header.scrolled #navbar li.active a {
     opacity: 0.5; }
 
 .section-hero {

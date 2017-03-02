@@ -63,20 +63,20 @@ class __TwigTemplate_abc99d098c25d5d562e89c56dda989b18c57bfb5e4e1fbfde3fe232355c
         ";
         // line 70
         $this->displayBlock('footer', $context, $blocks);
-        // line 78
+        // line 79
         echo "    </div>
     <div class=\"sb-slidebar sb-left sb-width-thin\">
         <div id=\"panel\">
         ";
-        // line 81
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 81)->display($context);
         // line 82
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 82)->display($context);
+        // line 83
         echo "        </div>
     </div>
     ";
-        // line 84
+        // line 85
         $this->displayBlock('bottom', $context, $blocks);
-        // line 97
+        // line 98
         echo "</body>
 </html>
 ";
@@ -282,20 +282,23 @@ class __TwigTemplate_abc99d098c25d5d562e89c56dda989b18c57bfb5e4e1fbfde3fe232355c
             <div class=\"totop\">
                 <span><a href=\"#\" id=\"toTop\"><i class=\"fa fa-arrow-up\"></i></a></span>
             </div>
+
             <p><img src=\"";
-        // line 75
+        // line 76
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://");
         echo "/images/logo-ev-white.svg\" alt=\"";
         echo twig_escape_filter($this->env, $this->getAttribute(($context["widget"] ?? null), "text", array()));
-        echo "\" /> <span>Copyright © 2017 Electric Vehicles España</span></p>
+        echo "\" /> <span>Copyright © ";
+        echo twig_date_format_filter($this->env, ($context["now"] ?? null), "Y");
+        echo " - Electric Vehicles España</span></p>
         </footer>
         ";
     }
 
-    // line 84
+    // line 85
     public function block_bottom($context, array $blocks = array())
     {
-        // line 85
+        // line 86
         echo "        ";
         echo $this->getAttribute(($context["assets"] ?? null), "js", array(0 => "bottom"), "method");
         echo "
@@ -324,7 +327,7 @@ class __TwigTemplate_abc99d098c25d5d562e89c56dda989b18c57bfb5e4e1fbfde3fe232355c
 
     public function getDebugInfo()
     {
-        return array (  299 => 85,  296 => 84,  287 => 75,  281 => 71,  278 => 70,  273 => 66,  268 => 67,  266 => 66,  261 => 65,  258 => 64,  253 => 62,  249 => 56,  246 => 55,  243 => 54,  238 => 50,  231 => 57,  228 => 54,  225 => 53,  222 => 52,  219 => 51,  217 => 50,  209 => 47,  205 => 45,  202 => 44,  198 => 37,  195 => 36,  192 => 35,  189 => 34,  186 => 33,  183 => 32,  179 => 29,  176 => 28,  173 => 27,  170 => 26,  167 => 25,  164 => 24,  161 => 23,  159 => 22,  156 => 21,  153 => 20,  150 => 19,  147 => 18,  144 => 17,  141 => 16,  138 => 15,  135 => 14,  132 => 13,  124 => 38,  122 => 32,  116 => 30,  114 => 13,  109 => 11,  105 => 10,  102 => 9,  100 => 8,  92 => 7,  89 => 6,  86 => 5,  80 => 97,  78 => 84,  74 => 82,  72 => 81,  67 => 78,  65 => 70,  62 => 69,  60 => 64,  57 => 63,  55 => 62,  52 => 61,  50 => 44,  45 => 42,  42 => 41,  40 => 5,  35 => 3,  32 => 2,  30 => 1,);
+        return array (  302 => 86,  299 => 85,  288 => 76,  281 => 71,  278 => 70,  273 => 66,  268 => 67,  266 => 66,  261 => 65,  258 => 64,  253 => 62,  249 => 56,  246 => 55,  243 => 54,  238 => 50,  231 => 57,  228 => 54,  225 => 53,  222 => 52,  219 => 51,  217 => 50,  209 => 47,  205 => 45,  202 => 44,  198 => 37,  195 => 36,  192 => 35,  189 => 34,  186 => 33,  183 => 32,  179 => 29,  176 => 28,  173 => 27,  170 => 26,  167 => 25,  164 => 24,  161 => 23,  159 => 22,  156 => 21,  153 => 20,  150 => 19,  147 => 18,  144 => 17,  141 => 16,  138 => 15,  135 => 14,  132 => 13,  124 => 38,  122 => 32,  116 => 30,  114 => 13,  109 => 11,  105 => 10,  102 => 9,  100 => 8,  92 => 7,  89 => 6,  86 => 5,  80 => 98,  78 => 85,  74 => 83,  72 => 82,  67 => 79,  65 => 70,  62 => 69,  60 => 64,  57 => 63,  55 => 62,  52 => 61,  50 => 44,  45 => 42,  42 => 41,  40 => 5,  35 => 3,  32 => 2,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -411,7 +414,8 @@ class __TwigTemplate_abc99d098c25d5d562e89c56dda989b18c57bfb5e4e1fbfde3fe232355c
             <div class=\"totop\">
                 <span><a href=\"#\" id=\"toTop\"><i class=\"fa fa-arrow-up\"></i></a></span>
             </div>
-            <p><img src=\"{{ url(\"theme://\") }}/images/logo-ev-white.svg\" alt=\"{{ widget.text|e }}\" /> <span>Copyright © 2017 Electric Vehicles España</span></p>
+
+            <p><img src=\"{{ url(\"theme://\") }}/images/logo-ev-white.svg\" alt=\"{{ widget.text|e }}\" /> <span>Copyright © {{ now | date(\"Y\") }} - Electric Vehicles España</span></p>
         </footer>
         {% endblock %}
     </div>
