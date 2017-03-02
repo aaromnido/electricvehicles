@@ -2,13 +2,13 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/electricvehicles/user/config/site.yaml',
-    'modified' => 1488393233,
+    'modified' => 1488453248,
     'data' => [
         'title' => 'Electric Vehicles',
         'default_lang' => 'es',
         'author' => [
             'name' => 'Sergio García',
-            'email' => 'sergio@test.com'
+            'email' => 'aaromnido@gmail.com'
         ],
         'taxonomies' => [
             0 => 'category',

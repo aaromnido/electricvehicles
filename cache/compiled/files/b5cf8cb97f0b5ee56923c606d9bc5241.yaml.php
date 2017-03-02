@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/electricvehicles/user/plugins/form/languages.yaml',
-    'modified' => 1488390697,
+    'modified' => 1488455060,
     'data' => [
         'en' => [
             'PLUGIN_FORM' => [
@@ -16,7 +16,7 @@ return [
                 'ACCEPT' => 'Allowed MIME Types',
                 'ACCEPT_HELP' => 'A list of MIME Types that are allowed for upload',
                 'ERROR_VALIDATING_CAPTCHA' => 'Error validating the Captcha',
-                'DATA_SUMMARY' => 'Here is the summary of what you wrote to us:',
+                'DATA_SUMMARY' => 'Este es un resumen de lo escrito:',
                 'NO_FORM_DATA' => 'No form data available',
                 'RECAPTCHA' => 'ReCaptcha',
                 'RECAPTCHA_SITE_KEY' => 'Site key',

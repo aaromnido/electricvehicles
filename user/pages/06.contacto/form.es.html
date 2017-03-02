@@ -1,0 +1,56 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>form.es.md</title>
+      </head>
+      <body>
+        <hr>
+<p>title: Contacto</p>
+<p>form:
+    name: contacto</p>
+<pre><code>fields:
+    - name: name
+      label: Nombre
+      placeholder: Introduce tu nombre completo...
+      autofocus: on
+      autocomplete: on
+      type: text
+      validate:
+        required: true
+
+    - name: email
+      label: Email
+      placeholder: Introduce tu email...
+      type: email
+      validate:
+        required: true
+
+    - name: message
+      label: Mensaje
+      placeholder: Introduce tu consulta para que podamos ayudarte..
+      type: textarea
+      validate:
+        required: true
+
+buttons:
+    - type: submit
+      value: Envíar
+    - type: reset
+      value: Limpiar
+
+process:
+    - email:
+        subject: &quot;[Site Contact Form] {{ form.value.name|e }}&quot;
+        body: &quot;{% include &#39;forms/data.html.twig&#39; %}&quot;
+    - save:
+        fileprefix: contact-
+        dateformat: Ymd-His-u
+        extension: txt
+        body: &quot;{% include &#39;forms/data.txt.twig&#39; %}&quot;
+    - message: Gracias, en breves nos pondremos en contacto contigo. :)
+    - display: thankyou
+</code></pre><hr>
+<h2 id="formulario-de-contacto">Formulario de contacto</h2>
+
+      </body>
+    </html>

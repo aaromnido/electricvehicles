@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1488394583,
-    'checksum' => '0e62a876346573822cb6db03b63829c9',
+    'timestamp' => 1488454627,
+    'checksum' => 'bfd9b852ecfc414c7afc3c9bdac0d43d',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1488390697
+            ],
+            'plugins/email' => [
+                'file' => 'user/config/plugins/email.yaml',
+                'modified' => 1488454627
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -15,7 +19,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1488393233
+                'modified' => 1488453248
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -144,25 +148,25 @@ return [
             ],
             'email' => [
                 'enabled' => true,
-                'from' => NULL,
-                'from_name' => NULL,
-                'to' => NULL,
-                'to_name' => NULL,
+                'from' => 'aaromnido@gmail.com',
+                'from_name' => 'From Fernando Val ',
+                'to' => 'aaromnido@gmail.com',
+                'to_name' => 'To Fernando Val',
                 'mailer' => [
                     'engine' => 'mail',
                     'smtp' => [
                         'server' => 'localhost',
                         'port' => 25,
                         'encryption' => 'none',
-                        'user' => '',
-                        'password' => ''
+                        'user' => 'aaromnido@gmail.com',
+                        'password' => 'Aaromnido6969'
                     ],
                     'sendmail' => [
                         'bin' => '/usr/sbin/sendmail'
                     ]
                 ],
                 'content_type' => 'text/html',
-                'debug' => false
+                'debug' => true
             ],
             'error' => [
                 'enabled' => true,
@@ -503,7 +507,7 @@ return [
             'default_lang' => 'es',
             'author' => [
                 'name' => 'Sergio García',
-                'email' => 'sergio@test.com'
+                'email' => 'aaromnido@gmail.com'
             ],
             'taxonomies' => [
                 0 => 'category',
