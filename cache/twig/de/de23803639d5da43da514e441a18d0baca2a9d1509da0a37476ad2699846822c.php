@@ -294,7 +294,7 @@ class __TwigTemplate_abc99d098c25d5d562e89c56dda989b18c57bfb5e4e1fbfde3fe232355c
         echo twig_date_format_filter($this->env, ($context["now"] ?? null), "Y");
         echo " - ";
         echo $this->getAttribute(($context["site"] ?? null), "title", array());
-        echo "</span></p>
+        echo " - Tel. <a href=\"tel:+34 617 310 033\">+34 617 310 033</a></span></p>
         </footer>
         ";
     }
@@ -419,7 +419,7 @@ class __TwigTemplate_abc99d098c25d5d562e89c56dda989b18c57bfb5e4e1fbfde3fe232355c
                 <span><a href=\"#\" id=\"toTop\"><i class=\"fa fa-arrow-up\"></i></a></span>
             </div>
 
-            <p><img src=\"{{ url(\"theme://\") }}/images/logo-ev-white.svg\" alt=\"{{ site.title }}\" /> <span>Copyright © {{ now | date(\"Y\") }} - {{ site.title }}</span></p>
+            <p><img src=\"{{ url(\"theme://\") }}/images/logo-ev-white.svg\" alt=\"{{ site.title }}\" /> <span>Copyright © {{ now | date(\"Y\") }} - {{ site.title }} - Tel. <a href=\"tel:+34 617 310 033\">+34 617 310 033</a></span></p>
         </footer>
         {% endblock %}
     </div>

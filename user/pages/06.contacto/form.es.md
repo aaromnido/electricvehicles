@@ -52,4 +52,4 @@ form:
 
 ## Formulario de contacto
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum blandit sagittis. Vestibulum hendrerit sed sem ac tempor. Morbi eget ex augue. Sed quam mi, viverra quis erat non, hendrerit luctus sapien. Donec magna urna, vestibulum pharetra porta eget, vestibulum ut libero. 
+Si deseas contactar conmigo, puedes llamarme por teléfono al **+34 617 310 033** o enviarme un mensaje por medio del siguiente formulario:
