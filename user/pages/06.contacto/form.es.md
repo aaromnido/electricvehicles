@@ -36,7 +36,7 @@ form:
     process:
         -
             email:
-                subject: '[Site Contact Form] {{ form.value.name|e }}'
+                subject: 'Electric Vehicles Contact Form {{ form.value.name|e }}'
                 body: '{% include ''forms/data.html.twig'' %}'
         -
             save:

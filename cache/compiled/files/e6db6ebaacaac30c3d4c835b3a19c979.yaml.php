@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/electricvehicles/user/config/system.yaml',
-    'modified' => 1488394582,
+    'modified' => 1488455710,
     'data' => [
         'absolute_urls' => false,
         'param_sep' => ':',
@@ -92,7 +92,7 @@ return [
             ]
         ],
         'cache' => [
-            'enabled' => true,
+            'enabled' => false,
             'check' => [
                 'method' => 'file'
             ],

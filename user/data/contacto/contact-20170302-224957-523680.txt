@@ -1,0 +1,5 @@
+
+name: Paco Martínez Soria
+email: paco@martinez-soria.es
+message: Hola, quisiera un Aiga eléctrico para ir a la capital a ver a los chicos. Sabe usted?
+

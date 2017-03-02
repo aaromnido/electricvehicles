@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1488455710,
-    'checksum' => '602f1da96989f1ab7704491375f86181',
+    'timestamp' => 1488491281,
+    'checksum' => '7e9945a75dce55909aecb72779a2625b',
     'files' => [
         'user/config' => [
             'media' => [
@@ -11,7 +11,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1488454627
+                'modified' => 1488491281
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -148,18 +148,18 @@ return [
             ],
             'email' => [
                 'enabled' => true,
-                'from' => 'aaromnido@gmail.com',
-                'from_name' => 'From Fernando Val ',
-                'to' => 'aaromnido@gmail.com',
-                'to_name' => 'To Fernando Val',
+                'from' => 'info@electricvehicles.es',
+                'from_name' => 'Electric Vehicles Contact Form',
+                'to' => 'info@electricvehicles.es',
+                'to_name' => 'Sergio García',
                 'mailer' => [
-                    'engine' => 'mail',
+                    'engine' => 'smtp',
                     'smtp' => [
-                        'server' => 'localhost',
+                        'server' => 'smtp.mailtrap.io',
                         'port' => 25,
                         'encryption' => 'none',
-                        'user' => 'aaromnido@gmail.com',
-                        'password' => 'Aaromnido6969'
+                        'user' => '180715050e8d95',
+                        'password' => '2e6713c23d02f5'
                     ],
                     'sendmail' => [
                         'bin' => '/usr/sbin/sendmail'
