@@ -30,11 +30,11 @@
 .section-hero {
   padding-left: 6rem;
   padding-right: 6rem;
-  background: url(../images/hero-bg.png);
+  background: url(../images/hero-bg.jpg);
   background-size: cover;
   margin-top: -4rem;
   width: 100%;
-  min-height: 560px;
+  min-height: 480px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -45,7 +45,7 @@
   -ms-flex-line-pack: center;
   align-content: center; }
   .section-hero .content {
-    max-width: 40%;
+    max-width: 50%;
     padding: 0; }
     .section-hero .content > * {
       text-align: left;
@@ -53,10 +53,10 @@
       margin: 0 0 1rem;
       color: #153143; }
     .section-hero .content h1 {
-      font-size: 46px; }
+      font-size: 52px; }
     .section-hero .content h2 {
       margin-top: -1.5rem;
-      font-size: 32px; }
+      font-size: 31px; }
     .section-hero .content p {
       font-size: 14px; }
     .section-hero .content a {
@@ -133,21 +133,29 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 6rem;
-    padding-right: 6rem; }
+    margin-left: 6rem;
+    margin-right: 6rem; }
   #featured .box {
     background: #65AF00;
     text-align: center;
     margin: 1px;
-    width: 33%;
+    width: 33.33%;
     padding: 30px;
     transition: all 0.4s ease-in;
-    opacity: 1; }
-    #featured .box.box-vehicles {
-      background-color: #153143;
-      background-image: url(../images/box-gradient.png), url(../images/opel-ampera-blanco.jpg);
+    opacity: 1;
+    position: relative; }
+    #featured .box.box-pictured {
       background-size: cover;
-      background-position: center; }
+      background-position: center;
+      background-color: #153143; }
+    #featured .box.box-vehicles {
+      background-image: url(../images/box-gradient.png), url(../images/opel-ampera-blanco.jpg); }
+    #featured .box.box-human {
+      background-image: url(../images/box-gradient.png), url(../images/box-human.jpg); }
+    #featured .box.box-map {
+      background-image: url(../images/box-gradient.png), url(../images/electromaps-bg.png);
+      padding-left: 0;
+      padding-right: 0; }
     #featured .box.box-vblog {
       background: #00ABE3; }
     #featured .box:hover {
@@ -159,3 +167,29 @@
       margin: 0; }
     #featured .box h3 {
       font-size: 24px; }
+    #featured .box footer {
+      background-color: #ECFFD3;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 0.6rem; }
+  #featured .box-two {
+    width: 66.66%;
+    min-height: 290px; }
+    #featured .box-two:hover {
+      width: 75%; }
+    #featured .box-two.box-pictured {
+      background-position: left top;
+      padding-left: 32%;
+      text-align: left; }
+    #featured .box-two .content > * {
+      margin: 0; }
+    #featured .box-two .cite {
+      margin-bottom: 1rem;
+      font-style: italic; }
+    #featured .box-two .button {
+      background: transparent !important;
+      color: white;
+      border-color: white;
+      text-transform: uppercase; }

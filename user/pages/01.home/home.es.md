@@ -7,8 +7,8 @@ content:
         dir: desc
 ---
 
-# Pásate a lo eléctrico
-## Vehículos nuevos y de ocasión
+# El momento es ahora
+## Vehículos eléctricos nuevos y de ocasión
 
 Somos una empresa dedicada a la venta de vehículos eléctricos nuevos y de ocasión. Importamos vehículos eléctricos de todo el mundo a España.
 
