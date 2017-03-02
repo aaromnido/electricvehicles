@@ -97,3 +97,29 @@
     opacity: 0.8;
     margin-right: 4rem;
     vertical-align: middle; }
+
+#contacto {
+  background: rgba(208, 214, 217, 0.2);
+  border-radius: 3px;
+  padding: 2rem 8%;
+  max-width: 55rem;
+  margin: 0 auto; }
+  #contacto .buttons button:last-child {
+    display: none; }
+  #contacto .buttons .button {
+    background: white;
+    background-image: linear-gradient(to right, rgba(101, 175, 0, 0.8), rgba(0, 171, 227, 0.8));
+    padding: 0.6rem 2.6rem;
+    border-radius: 100px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid transparent;
+    transition: all 0.4s ease-in; }
+    #contacto .buttons .button:hover {
+      background: transparent;
+      color: #00ABE3;
+      border: 1px solid #00ABE3; }
+
+.button {
+  border-radius: 100px; }
