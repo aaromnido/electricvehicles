@@ -48,7 +48,7 @@ class __TwigTemplate_fcdfe925fd166c548bdded773e0f8411c42fcba178ed58b8ff93e52ce40
         // line 14
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://");
         echo "/images/icon-box-help.svg\" alt=\"Servicios\" />
-\t\t\t\t<h3>Services</h3>
+\t\t\t\t<h3>Servicios</h3>
 \t\t\t\t<p>Te ofrecemos vehículos eléctricos nuevos y de ocasión. Si estás interesado en algún modelo en particular lo traemos desde cualquier parte del mundo para ti.</p>
 \t\t\t</a><!-- box -->
 
@@ -148,7 +148,7 @@ class __TwigTemplate_fcdfe925fd166c548bdded773e0f8411c42fcba178ed58b8ff93e52ce40
 \t\t<div class=\"row\">
 \t\t\t<a href=\"{{ base_url }}/servicios\" class=\"box box-services\">
 \t\t\t\t<img src=\"{{ url(\"theme://\") }}/images/icon-box-help.svg\" alt=\"Servicios\" />
-\t\t\t\t<h3>Services</h3>
+\t\t\t\t<h3>Servicios</h3>
 \t\t\t\t<p>Te ofrecemos vehículos eléctricos nuevos y de ocasión. Si estás interesado en algún modelo en particular lo traemos desde cualquier parte del mundo para ti.</p>
 \t\t\t</a><!-- box -->
 

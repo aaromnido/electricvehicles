@@ -29,7 +29,7 @@ class __TwigTemplate_49e40a90e61cbe337660734e13f46f464780479418b1c436172031536ee
     {
         // line 4
         echo "\t<div id=\"content\">
-\t\t<h1>";
+\t\t<h1 class=\"title\">";
         // line 5
         echo $this->getAttribute(($context["page"] ?? null), "title", array());
         echo "</h1>
@@ -70,7 +70,7 @@ class __TwigTemplate_49e40a90e61cbe337660734e13f46f464780479418b1c436172031536ee
 
 {% block content %}
 \t<div id=\"content\">
-\t\t<h1>{{ page.title }}</h1>
+\t\t<h1 class=\"title\">{{ page.title }}</h1>
 \t\t{{ page.content }}
 \t</div>
 {% endblock %}

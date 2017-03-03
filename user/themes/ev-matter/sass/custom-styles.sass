@@ -8,6 +8,7 @@ $blue: #00ABE3
 $sky: #9FDFF4
 $sky-light: #C3EBF8
 $night: #153143
+$night-medium: lighten(#344D6D, 10%)
 $grey: #7A8A9F
 $silver: #D0D6D9
 
@@ -15,6 +16,12 @@ $silver: #D0D6D9
 @mixin linear-gradient
     background: white
     background-image: linear-gradient(to right,transparentize($green, 0.2), transparentize($blue, 0.2))
+
+h1.title
+    color: $night
+
+p
+    color: $night-medium
 
 #body
     padding-left: 0

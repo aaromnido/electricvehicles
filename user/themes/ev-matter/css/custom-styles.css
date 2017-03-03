@@ -1,5 +1,11 @@
 /* Vars */
 /* Colors */
+h1.title {
+  color: #153143; }
+
+p {
+  color: #446590; }
+
 #body {
   padding-left: 0;
   padding-right: 0; }
