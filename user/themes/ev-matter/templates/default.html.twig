@@ -1,6 +1,16 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
+{% set images = page.media.images %}
+
+{% if images %}
+	<div class="section-header-picture">
+		{% for image in images %}
+			{{ image.cropZoom(1280, 340).html }}
+		{% endfor %}
+	</div>
+{% endif %}
+
 	<div id="content">
 		<h1 class="title">{{ page.title }}</h1>
 		{{ page.content }}
