@@ -1,89 +1,97 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1488494415,
-    'checksum' => 'dd7ff613853ab3003a87b4b4093cd467',
+    'timestamp' => 1489007391,
+    'checksum' => '8196d123ebf972b2e1c87edfe13b1b42',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1488390697
+                'modified' => 1488617062
+            ],
+            'plugins/backup-manager' => [
+                'file' => 'user/config/plugins/backup-manager.yaml',
+                'modified' => 1488371394
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1488494415
+                'modified' => 1488617062
+            ],
+            'plugins/git-sync' => [
+                'file' => 'user/config/plugins/git-sync.yaml',
+                'modified' => 1488369364
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1488390697
+                'modified' => 1488617062
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1488453248
+                'modified' => 1488617062
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
-                'modified' => 1488390697
+                'modified' => 1488617062
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1488455710
+                'modified' => 1488617062
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1488390697
+                'modified' => 1488617062
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1488390697
+                'modified' => 1488617062
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1488390697
+                'modified' => 1488617062
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1488390697
+                'modified' => 1488617062
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1488390697
+                'modified' => 1488617062
             ],
             'plugins/backup-manager' => [
                 'file' => 'user/plugins/backup-manager/backup-manager.yaml',
-                'modified' => 1488390697
+                'modified' => 1488617062
             ],
             'plugins/devtools' => [
                 'file' => 'user/plugins/devtools/devtools.yaml',
-                'modified' => 1488390843
+                'modified' => 1488617062
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1488390697
+                'modified' => 1488617062
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1488390697
+                'modified' => 1488617062
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1488390697
+                'modified' => 1488617062
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1488390697
+                'modified' => 1488617062
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1488390697
+                'modified' => 1488617062
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1488390697
+                'modified' => 1488617062
             ]
         ]
     ],
@@ -141,7 +149,26 @@ return [
                 ]
             ],
             'backup-manager' => [
-                'enabled' => true
+                'enabled' => true,
+                'backup' => [
+                    'testmode' => [
+                        'enabled' => false,
+                        'compressionratio' => 1.1999999999999999555910790149937383830547332763671875
+                    ],
+                    'phptimeout' => 600,
+                    'storage' => [
+                        'maxspace' => 10,
+                        'keepdays' => 10,
+                        'showbackups' => 50
+                    ],
+                    'log' => true,
+                    'ignore' => [
+                        'foldercase' => true,
+                        'toplevelintersect' => false,
+                        'foldersintersect' => false,
+                        'forceaddasempty' => false
+                    ]
+                ]
             ],
             'devtools' => [
                 'enabled' => true
@@ -242,6 +269,29 @@ return [
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
+            ],
+            'git-sync' => [
+                'enabled' => true,
+                'text_var' => 'Custom Text added by the **Git Sync** plugin (disable plugin to remove)',
+                'folders' => [
+                    0 => 'pages'
+                ],
+                'repository' => 'https://github.com/aaromnido/grav-electric-vehicles.git',
+                'user' => 'aaromnido@gmail.com',
+                'password' => 'gitsync-def50200e56802a015163cca41010f6d276cd65e15fcb24394a29517b9ebfc6c3fc05332da532c5352dfbc9f70f8cfcb9eb20f48b805fbcd1e385b4c07495089071aa7955b79a491b480744d6503f6b2d1cd7567aa27940fc72c122f5fc2356a60',
+                'webhook' => '/_git-sync',
+                'branch' => 'master',
+                'remote' => [
+                    'name' => 'origin',
+                    'branch' => 'master'
+                ],
+                'git' => [
+                    'author' => 'gituser',
+                    'name' => 'GitSync',
+                    'email' => 'aaromnido@gmail.com',
+                    'bin' => 'git'
+                ],
+                'logging' => false
             ]
         ],
         'media' => [

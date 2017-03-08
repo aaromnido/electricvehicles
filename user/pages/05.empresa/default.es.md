@@ -2,8 +2,23 @@
 title: Empresa
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum blandit sagittis. Vestibulum hendrerit sed sem ac tempor. Morbi eget ex augue. Sed quam mi, viverra quis erat non, hendrerit luctus sapien. Donec magna urna, vestibulum pharetra porta eget, vestibulum ut libero. In ac porta ex. Nulla eget convallis felis, nec tempus eros. Suspendisse hendrerit fringilla neque.
+Hola me llamo Sergio García y mi misión es ayudarte y asesorarte en todo lo que necesites para dar con facilidad y seguridad tu paso a la movilidad electrica.
 
-Nulla facilisi. Sed sed tempus lacus. Nullam feugiat odio quis libero posuere pharetra. Morbi euismod sapien nec nunc volutpat, id tincidunt risus euismod. Vestibulum non urna sollicitudin, mollis lorem in, varius turpis. Sed feugiat bibendum imperdiet. Duis blandit aliquam lectus, eu eleifend felis pulvinar in. Pellentesque et tempor elit, a ornare nisi. Sed convallis neque accumsan dictum sollicitudin. Aliquam at tortor a enim hendrerit porta.
+Toda mi carrera laboral se ha desarrollado en varios campos de la automocion durante los últimos 20 años de mi vida. 
+En 2016 empece a difundir la movilidad eléctrica en el canal de youtube “Zero Emisiones” donde vi la necesidad de la gente que quiere acceder al vehículo eléctrico en el mercado de segunda mano.
 
-Etiam bibendum porta velit in interdum. Duis auctor laoreet elementum. Curabitur eget rhoncus eros. Donec rutrum elit nisi, a molestie nisl placerat sed. Proin at tempor arcu. Phasellus posuere accumsan urna a dignissim. Nulla feugiat nulla posuere, fermentum libero eget, tempor lacus. Suspendisse euismod varius risus et dictum. Nullam non elit hendrerit, luctus ante et, vulputate neque. Pellentesque dignissim mauris non turpis finibus, et tempus sem pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ElectricVehicles & Charge Point Nace para cubrir las necesidades del ciudadano, las empresas o instituciones referentes a los vehículos eléctricos nuevos o de ocasión y los puntos de carga.
+
+##### ###### Nuestra Misión:
+
+Acelerar la transición a una movilidad mas sostenible. 
+
+Promover las energías renovables. 
+
+Promover los puntos de carga para V.E.
+
+##### ###### Nuestro Trabajo:
+
+Venta de Vehículos Eléctricos Nuevos y de Ocasion
+
+Venta de Puntos de Carga públicos y privados

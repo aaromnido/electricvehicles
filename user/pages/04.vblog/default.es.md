@@ -1,9 +1,17 @@
 ---
-title: VBlog
+title: 'Zero Emisiones'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum blandit sagittis. Vestibulum hendrerit sed sem ac tempor. Morbi eget ex augue. Sed quam mi, viverra quis erat non, hendrerit luctus sapien. Donec magna urna, vestibulum pharetra porta eget, vestibulum ut libero. In ac porta ex. Nulla eget convallis felis, nec tempus eros. Suspendisse hendrerit fringilla neque.
+Zero Emisiones es mi aportación a la movilidad electrica y las energias renovables. Intento llegar al maximo numero de personas de las formas que estan ha mi alcance.
 
-Nulla facilisi. Sed sed tempus lacus. Nullam feugiat odio quis libero posuere pharetra. Morbi euismod sapien nec nunc volutpat, id tincidunt risus euismod. Vestibulum non urna sollicitudin, mollis lorem in, varius turpis. Sed feugiat bibendum imperdiet. Duis blandit aliquam lectus, eu eleifend felis pulvinar in. Pellentesque et tempor elit, a ornare nisi. Sed convallis neque accumsan dictum sollicitudin. Aliquam at tortor a enim hendrerit porta.
+##### El canal de youtube
 
-Etiam bibendum porta velit in interdum. Duis auctor laoreet elementum. Curabitur eget rhoncus eros. Donec rutrum elit nisi, a molestie nisl placerat sed. Proin at tempor arcu. Phasellus posuere accumsan urna a dignissim. Nulla feugiat nulla posuere, fermentum libero eget, tempor lacus. Suspendisse euismod varius risus et dictum. Nullam non elit hendrerit, luctus ante et, vulputate neque. Pellentesque dignissim mauris non turpis finibus, et tempus sem pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+[youtube.com/zeroemisiones](youtube)
+
+##### El Podcast
+
+<iframe src="http://www.ivoox.com/player_es_podcast_315420_1.html" width="100%" style="border: 1px solid #D7D7D7;" height="440" frameborder="0" allowfullscreen="0" scrolling="no" ></iframe>
+
+##### El Foro
+
+[zeroemisiones.net](zeroemisiones.net)

@@ -1,0 +1,5 @@
+FYI: This folder has been included as an empty folder during backup.
+
+If your site does not operate as expected once you restore a backup you may have to recover subfolders and files from the original site or existing backups.
+
+This backup includes a backup log file in the backup directory which contains addional information.

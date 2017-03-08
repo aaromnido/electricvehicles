@@ -108,6 +108,6 @@ class __TwigTemplate_32791962f26def93ce04713b96aa0d6fbf8ed1dd018240a37edef0fff1f
 
 
 
-", "partials/logo.html.twig", "/Applications/MAMP/htdocs/electricvehicles/user/plugins/admin/themes/grav/templates/partials/logo.html.twig");
+", "partials/logo.html.twig", "/Applications/MAMP/htdocs/electric-vehicles-20170308220752/user/plugins/admin/themes/grav/templates/partials/logo.html.twig");
     }
 }

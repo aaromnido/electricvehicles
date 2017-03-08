@@ -1,0 +1,58 @@
+FYI: This file contains background information about this backup zip file.
+Backups with a suffix of -partial- are not suited to restore a GRAV site.
+If you need a backup that includes your GRAV, plugins, other essentials and your content, please run backup without a scope.
+
+Backup status information:
+
+Run In Test Mode: 
+Current Scope: backup-manager.config
+Ignore Top Level: backup, cache, images, logs, tmp
+Ignore Folders: .git, .svn, .hg, .idea, node_modules
+Ignore File Types: 
+Site Ignore Top Level: 
+Site Ignore Folders: 
+Add As Empty Folders: 
+Restrict File Types: 
+Multiple Paths: 
+Intersect Site Top Levels: 
+Intersect Site Ignore Folders: 
+Force Add As Empty: 
+Site Backup: 1
+Process Timeout: 600
+Zip File Status: unknown
+Assumed Ratio For Tests: 1.2
+Bytes Excluded Raw: 26220195
+Bytes Excluded: 25.01MB
+Files Excluded: 545
+Files To Zip: 0
+Bytes To Zip Raw: 0
+Bytes To Zip: 0B
+Zipped Bytes Raw: 0
+Zipped Bytes: 0B
+Compression Ratio: 0
+Zip Savings: 0
+Excluded Path List: /srv/app/electricvehicles/htdocs/backup, /srv/app/electricvehicles/htdocs/cache, /srv/app/electricvehicles/htdocs/images, /srv/app/electricvehicles/htdocs/logs, /srv/app/electricvehicles/htdocs/tmp, /srv/app/electricvehicles/htdocs/user/.git
+Backup Starttime Raw: 1489007272.037
+Backup Endtime Raw: 1489007272.3905
+Backup Duration Raw: 0.35344791412354
+Remaining Timeout Raw: 599.64655208588
+Duration Before Save Raw: 0
+Backup Duration: 353.45ms
+Remaining Timeout: 599.65s
+Duration Before Save: 
+Keep Days: 10
+Backup Path: /srv/app/electricvehicles/htdocs/backup
+Storage Capacity Raw: 10737418240
+Capacity Used Raw: 0
+Storage Files Deleted: 0
+Storaged Purged Bytes Raw: 0
+Storage Files Exceeded Max Days: 0
+Storage Files Exceeded Max Capacity: 0
+Storage Last Check Raw: 1489007272
+Storage Capacity: 10GB
+Capacity Used: 0B
+Storage Purged Bytes: 0B
+Storage Last Check: 08/03/2017 22:07:52
+
+---Backup log end---
+
