@@ -1,13 +1,11 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-{% set images = page.media.images %}
+{% set image = page.media.images|last %}
 
-{% if images %}
+{% if image %}
 	<div class="section-header-picture">
-		{% for image in images %}
-			{{ image.cropZoom(1280, 340).html }}
-		{% endfor %}
+		{{ image.cropZoom(1280, 340).html }}
 	</div>
 {% endif %}
 

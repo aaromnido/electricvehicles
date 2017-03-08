@@ -5,8 +5,7 @@ title: 'Zero Emisiones'
 Zero Emisiones es mi aportación a la movilidad electrica y las energias renovables. Intento llegar al maximo numero de personas de las formas que estan ha mi alcance.
 
 ##### El canal de youtube
-
-[youtube.com/zeroemisiones](youtube)
+[youtube.com/zeroemisiones](https://www.youtube.com/channel/UCjjnPwG1ch5y0nny4hSIlmw/featured)
 
 ##### El Podcast
 

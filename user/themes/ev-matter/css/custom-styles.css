@@ -88,9 +88,22 @@ p {
   margin: 40px auto;
   padding-left: 6.5rem;
   padding-right: 6.5rem; }
-  #content p {
+  #content > * {
     max-width: 55rem;
     margin: 0 auto 1rem auto; }
+  #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+    color: #153143;
+    margin-top: 2rem; }
+  #content h1 + h2,
+  #content h2 {
+    font-weight: 600 !important;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: "Raleway", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    letter-spacing: 0; }
+  #content iframe {
+    margin: 0 auto !important;
+    display: block; }
 
 #footer,
 #footer .totop span {
