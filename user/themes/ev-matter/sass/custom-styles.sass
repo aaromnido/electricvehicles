@@ -12,10 +12,19 @@ $night-medium: lighten(#344D6D, 10%)
 $grey: #7A8A9F
 $silver: #D0D6D9
 
+$tablet: "max-width: 59.938em"
+$phone: "max-width: 47.938em"
+
 //@mixin linear-gradient(-15deg, $hero-background-bottom 0%, $hero-background-top 80%)
 @mixin linear-gradient
     background: white
     background-image: linear-gradient(to right,transparentize($green, 0.2), transparentize($blue, 0.2))
+
+body
+    @media only all and ($tablet)
+        //border: 2px solid red
+    @media only all and ($phone)
+        //border: 2px solid pink
 
 h1.title
     color: $night
@@ -38,11 +47,22 @@ p
     &:hover
         opacity: 0.8
 
+    @media only all and ($phone)
+        width: 180px
+        height: 30px
+        background-size: 100%
+
 #header
     background-image: url(../images/header-bg.svg)
     background-position: bottom center
     background-repeat: no-repeat
     background-size:contain
+    @media only all and ($tablet)
+        padding-left: 3rem
+        padding-right: 2rem
+    @media only all and ($phone)
+        padding-left: 2rem
+        padding-right: 1rem
 
     #navbar,
     &.scrolled #navbar
@@ -65,10 +85,26 @@ p
     display: flex
     align-items: center
     align-content: center
-    //background: transparentize($grey, 0.8)
+    @media only all and ($tablet)
+        padding-left: 1rem
+        padding-right: 1rem
+        background-size: 240%
+        background-position: center
+        background-repeat: no-repeat
+    @media only all and ($phone)
+        padding-left: 0
+        padding-right: 0
+        background-position: 75% -60%
 
     .content
         max-width: 50%
+        @media only all and ($tablet)
+            background-color: transparentize(white, 0.2)
+            padding: 1rem
+            max-width: 65%
+        @media only all and ($phone)
+            max-width: 100%
+            margin-top: 8rem
         padding: 0
         >*
             text-align: left
@@ -78,11 +114,19 @@ p
 
         h1
             font-size: 52px
+            @media only all and ($tablet)
+                font-size: 44px
+            @media only all and ($phone)
+                font-size: 32px
+                margin-bottom: 2rem
 
         h2
             margin-top: -1.5rem
             font-size: 27px
             letter-spacing: 0
+            @media only all and ($tablet)
+                font-size: 22px
+                margin-bottom: 2rem
 
         p
             font-size: 16px
@@ -108,6 +152,9 @@ p
     margin: 40px auto
     padding-left: 6.5rem
     padding-right: 6.5rem
+    @media only all and ($tablet)
+        padding-left: 1rem
+        padding-right: 1rem
     >*
         max-width: 55rem
         margin: 0 auto 1rem auto
@@ -181,6 +228,11 @@ p
         display: flex
         margin-left: 6rem
         margin-right: 6rem
+        @media only all and ($tablet)
+            margin-left: 0
+            margin-right: 0
+        @media only all and ($phone)
+            display: block
 
 
     .box
@@ -192,6 +244,9 @@ p
         transition: all 0.4s ease-in
         opacity: 1
         position: relative
+        @media only all and ($phone)
+            display: block
+            width: 100%
         &.box-pictured
             background-size: cover
             background-position: center
@@ -200,10 +255,18 @@ p
             background-image: url(../images/box-gradient.png), url(../images/opel-ampera-blanco.jpg)
         &.box-human
             background-image: url(../images/box-gradient.png), url(../images/box-human.jpg)
+            @media only all and ($phone)
+                width: 100%
+                .content
+                    background: transparentize($night, 0.5)
+
+                    p
+                        color: white
         &.box-map
             background-image: url(../images/box-gradient.png), url(../images/electromaps-bg.png)
             padding-left: 0
             padding-right: 0
+
         &.box-vblog
             background: $blue
         &:hover
@@ -229,6 +292,8 @@ p
     .box-two
         width: 66.66%
         min-height: 290px
+        @media only all and ($phone)
+            width: 100%
 
         &:hover
             width: 75%
@@ -237,6 +302,13 @@ p
             background-position: left top
             padding-left: 32%
             text-align: left
+            @media only all and ($phone)
+                padding: 2rem
+                padding-top: 20rem
+                text-align: center
+                background-size: cover
+                background-position: 7% center
+
         .content >*
             margin: 0
 
@@ -268,3 +340,8 @@ p
 .veh-culos
     #content
         text-align: center
+
+.sb-slidebar
+    background: $night !important
+    li
+        border: none !important

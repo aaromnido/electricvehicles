@@ -20,11 +20,24 @@ p {
   transition: all 0.4s ease-in; }
   #logo a:hover {
     opacity: 0.8; }
+  @media only all and (max-width: 47.938em) {
+    #logo a {
+      width: 180px;
+      height: 30px;
+      background-size: 100%; } }
 
 #header {
   background-image: url(../images/header-bg.svg);
   background-position: bottom center;
   background-repeat: no-repeat; }
+  @media only all and (max-width: 59.938em) {
+    #header {
+      padding-left: 3rem;
+      padding-right: 2rem; } }
+  @media only all and (max-width: 47.938em) {
+    #header {
+      padding-left: 2rem;
+      padding-right: 1rem; } }
   #header #navbar a,
   #header.scrolled #navbar a {
     color: #7A8A9F !important;
@@ -50,9 +63,30 @@ p {
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center; }
+  @media only all and (max-width: 59.938em) {
+    .section-hero {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      background-size: 240%;
+      background-position: center;
+      background-repeat: no-repeat; } }
+  @media only all and (max-width: 47.938em) {
+    .section-hero {
+      padding-left: 0;
+      padding-right: 0;
+      background-position: 75% -60%; } }
   .section-hero .content {
     max-width: 50%;
     padding: 0; }
+    @media only all and (max-width: 59.938em) {
+      .section-hero .content {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 1rem;
+        max-width: 65%; } }
+    @media only all and (max-width: 47.938em) {
+      .section-hero .content {
+        max-width: 100%;
+        margin-top: 8rem; } }
     .section-hero .content > * {
       text-align: left;
       padding: 0;
@@ -60,10 +94,21 @@ p {
       color: #153143; }
     .section-hero .content h1 {
       font-size: 52px; }
+      @media only all and (max-width: 59.938em) {
+        .section-hero .content h1 {
+          font-size: 44px; } }
+      @media only all and (max-width: 47.938em) {
+        .section-hero .content h1 {
+          font-size: 32px;
+          margin-bottom: 2rem; } }
     .section-hero .content h2 {
       margin-top: -1.5rem;
       font-size: 27px;
       letter-spacing: 0; }
+      @media only all and (max-width: 59.938em) {
+        .section-hero .content h2 {
+          font-size: 22px;
+          margin-bottom: 2rem; } }
     .section-hero .content p {
       font-size: 16px; }
     .section-hero .content a {
@@ -88,6 +133,10 @@ p {
   margin: 40px auto;
   padding-left: 6.5rem;
   padding-right: 6.5rem; }
+  @media only all and (max-width: 59.938em) {
+    #content {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
   #content > * {
     max-width: 55rem;
     margin: 0 auto 1rem auto; }
@@ -155,6 +204,13 @@ p {
     display: flex;
     margin-left: 6rem;
     margin-right: 6rem; }
+    @media only all and (max-width: 59.938em) {
+      #featured .row {
+        margin-left: 0;
+        margin-right: 0; } }
+    @media only all and (max-width: 47.938em) {
+      #featured .row {
+        display: block; } }
   #featured .box {
     background: #65AF00;
     text-align: center;
@@ -164,6 +220,10 @@ p {
     transition: all 0.4s ease-in;
     opacity: 1;
     position: relative; }
+    @media only all and (max-width: 47.938em) {
+      #featured .box {
+        display: block;
+        width: 100%; } }
     #featured .box.box-pictured {
       background-size: cover;
       background-position: center;
@@ -172,6 +232,13 @@ p {
       background-image: url(../images/box-gradient.png), url(../images/opel-ampera-blanco.jpg); }
     #featured .box.box-human {
       background-image: url(../images/box-gradient.png), url(../images/box-human.jpg); }
+      @media only all and (max-width: 47.938em) {
+        #featured .box.box-human {
+          width: 100%; }
+          #featured .box.box-human .content {
+            background: rgba(21, 49, 67, 0.5); }
+            #featured .box.box-human .content p {
+              color: white; } }
     #featured .box.box-map {
       background-image: url(../images/box-gradient.png), url(../images/electromaps-bg.png);
       padding-left: 0;
@@ -197,12 +264,22 @@ p {
   #featured .box-two {
     width: 66.66%;
     min-height: 290px; }
+    @media only all and (max-width: 47.938em) {
+      #featured .box-two {
+        width: 100%; } }
     #featured .box-two:hover {
       width: 75%; }
     #featured .box-two.box-pictured {
       background-position: left top;
       padding-left: 32%;
       text-align: left; }
+      @media only all and (max-width: 47.938em) {
+        #featured .box-two.box-pictured {
+          padding: 2rem;
+          padding-top: 20rem;
+          text-align: center;
+          background-size: cover;
+          background-position: 7% center; } }
     #featured .box-two .content > * {
       margin: 0; }
     #featured .box-two .cite {
@@ -231,3 +308,8 @@ p {
 
 .veh-culos #content {
   text-align: center; }
+
+.sb-slidebar {
+  background: #153143 !important; }
+  .sb-slidebar li {
+    border: none !important; }
